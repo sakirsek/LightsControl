@@ -1,0 +1,27 @@
+body {
+  padding: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.light {
+	border: solid 1px white;
+	text-align: center;
+	font-size: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.light.off {
+	background-color: black;
+	color: white;
+}
+
+.light.on {
+	background-color: yellow;
+	color: black;
+}

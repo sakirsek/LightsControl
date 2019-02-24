@@ -1,0 +1,17 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+<div class="container-fluid">
+	<div class="row">
+	  	{% for item in lights %}
+		    <div id="{{ item.name }}" class="light col-12 col-sm-6 col-md-3 col-lg-2 {{ item.status ? 'on' : 'off' }}" data-name="{{ item.name }}" data-status="{{ item.status }}">
+		    	<div>
+		    		<i class="far fa-lightbulb fa-fw"></i><br>{{ item.name }}
+		    	</div>
+		    </div>
+	    {% endfor %}
+	</div>
+</div>
+
+
+{% endblock %}
